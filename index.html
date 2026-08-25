@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVAE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <a href="#home" class="logo">NOVAE</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu">
+           ☰
+        </button>
+        <ul class="nav-links">
+              <li><a href="#home" class="active" data-filter="all">Home</a></li>
+              <li><a href="#shop" data-filter="all">Shop</a></li>
+              <li><a href="#shop" data-filter="Women">Women</a></li>
+              <li><a href="#shop" data-filter="Men">Men</a></li>
+             <li><a href="#sale">Sale</a></li>
+        </ul>
+        <ul class="nav-actions">
+            <li>
+    <button class="search-toggle" type="button">Search</button>
+        </li>
+            <li><a href="#wishlist">Wishlist</a></li>
+            <li>
+    <button class="cart-toggle" type="button">Cart</button>
+        </li>
+        </ul>
+    </nav>
+    <aside class="cart-drawer">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+
+        <button class="cart-close" type="button">
+            ×
+        </button>
+    </div>
+
+    <div class="cart-items">
+        <p class="cart-empty">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+        <p class="cart-total">
+            Total: <span>$0</span>
+        </p>
+
+        <button class="checkout-btn" type="button">
+            Checkout
+        </button>
+    </div>
+    </aside>
+    <div class="search-panel">
+    <form class="search-form">
+        <input
+            type="search"
+            class="search-input"
+            placeholder="Search products..."
+            aria-label="Search products"
+        >
+        <button type="submit">Search</button>
+    </form>
+</div>
+    </header>
+     <!--HERO SECTION-->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="hero-title">Style Made 
+                <br>Simple.</h1>
+            <p class="hero-description">NOVAE-Simple,
+                <br>Timeless Fashion For Every day.</p>
+        <div class="hero-buttons">
+            <a href="#shop" class="btn" data-filter="all">Explore Collection</a>
+        </div>
+        </div>
+        
+    </section>
+
+    <section id="categories" class="categories">
+        <div class="section-header">
+            <p class="section-label">Explore</p>
+            <h2>Shop by category</h2>
+        </div>
+        <div class="categories-grid">
+            <article class="categories-card">
+                <div class="categories-image">
+                    <img src="women.png" alt="Women fashion collection">
+                </div>
+                <div class="category-content">
+                    <h3>Women</h3>
+                    <p>Discover the latest pieces for her.</p>
+                    <a href="#shop" data-filter="Women">Shop women</a>
+                </div>
+            </article>
+            <article class="categories-card">
+                <div class="categories-image">
+                    <img src="men.png" alt="Men fashion collection">
+                </div>
+                <div class="category-content">
+                    <h3>Men</h3>
+                    <p>Modern essentials for him.</p>
+                    <a href="#shop" data-filter="Men">Shop Men</a>
+                    
+                </div>
+            </article>
+            <article class="categories-card">
+                <div class="categories-image">
+                    <img src="sale.png" alt="NOVAE sale collection">
+                </div>
+                <div class="category-content">
+                    <h3>Sale</h3>
+                    <p>Selected style at special prices.</p>
+                    <a href="#sale">Shop Sale</a>
+                </div>
+            </article>
+        </div>
+        
+     </section>
+     <section id="shop" class="featured-products">
+
+    <div class="section-header">
+        <p class="section-label">Our Selection</p>
+        <h2 id="shop-heading">Featured Pieces</h2>
+    </div>
+
+    <div class="filter-bar">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="Women">Women</button>
+        <button type="button" class="filter-btn" data-filter="Men">Men</button>
+    </div>
+
+    <div class="products-grid" id="featured-products">
+
+        <!-- Product 1 -->
+        <article class="product-card"
+            data-name="Oversized Cotton Shirt"
+            data-price="79"
+            data-category="Women">
+
+            <div class="product-image">
+                <img src="over.png" alt="Oversized Cotton Shirt">
+            </div>
+
+            <div class="product-info">
+                <p class="product-category">Women</p>
+
+                <h3 class="product-name">
+                    Oversized Cotton Shirt
+                </h3>
+
+                <p class="product-price">$79</p>
+
+                <div class="product-actions">
+                    <button class="wishlist-btn" type="button" aria-label="Add to wishlist">
+                        ♡
+                    </button>
+                    <button class="add-to-cart" type="button">
+                        Add to Cart
+                    </button>
+                </div>
+                <button class="quick-view-btn" type="button">Quick view</button>
+            </div>
+
+        </article>
+
+
+        <!-- Product 2 -->
+        <article class="product-card"
+            data-name="Relaxed Linen Trousers"
+            data-price="95"
+            data-category="Men">
+
+            <div class="product-image">
+                <img src="re.png" alt="Relaxed Linen Trousers">
+            </div>
+
+            <div class="product-info">
+                <p class="product-category">Men</p>
+
+                <h3 class="product-name">
+                    Relaxed Linen Trousers
+                </h3>
+
+                <p class="product-price">$95</p>
+
+                <div class="product-actions">
+                    <button class="wishlist-btn" type="button" aria-label="Add to wishlist">
+                        ♡
+                    </button>
+                    <button class="add-to-cart" type="button">
+                        Add to Cart
+                    </button>
+                </div>
+                <button class="quick-view-btn" type="button">Quick view</button>
+            </div>
+
+        </article>
+
+
+        <!-- Product 3 -->
+        <article class="product-card"
+            data-name="Minimal Midi Dress"
+            data-price="110"
+            data-category="Women">
+
+            <div class="product-image">
+                <img src="d.png" alt="Minimal Midi Dress">
+            </div>
+
+            <div class="product-info">
+                <p class="product-category">Women</p>
+
+                <h3 class="product-name">
+                    Minimal Midi Dress
+                </h3>
+
+                <p class="product-price">$110</p>
+
+                <div class="product-actions">
+                    <button class="wishlist-btn" type="button" aria-label="Add to wishlist">
+                        ♡
+                    </button>
+                    <button class="add-to-cart" type="button">
+                        Add to Cart
+                    </button>
+                </div>
+                <button class="quick-view-btn" type="button">Quick view</button>
+            </div>
+
+        </article>
+
+
+        <!-- Product 4 -->
+        <article class="product-card"
+            data-name="Blazer"
+            data-price="120"
+            data-category="Men">
+
+            <div class="product-image">
+                <img src="b.png" alt="Blazer">
+            </div>
+
+            <div class="product-info">
+                <p class="product-category">Men</p>
+
+                <h3 class="product-name">
+                    Blazer
+                </h3>
+
+                <p class="product-price">$120</p>
+
+                <div class="product-actions">
+                    <button class="wishlist-btn" type="button" aria-label="Add to wishlist">
+                        ♡
+                    </button>
+                    <button class="add-to-cart" type="button">
+                        Add to Cart
+                    </button>
+                </div>
+                <button class="quick-view-btn" type="button">Quick view</button>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+     <section id="sale" class="promo-banner">
+        <div class="promo-content">
+            <p class="section-label">NOVAE EDIT</p>
+            <h2>Elevate Your Everyday</h2>
+            <p>Timeless pieces designed for your everyday style.</p>
+            <a href="#new-arrivals" class="btn">Shop New Arrivals</a>
+
+        </div>
+
+     </section>
+     <section id="new-arrivals" class="new-arrivals">
+        <div class="section-header">
+            <p class="section-label">Just In</p>
+            <h2>New Arrivals</h2>
+        </div>
+
+        <div class="products-grid">
+            <article class="product-card"
+                data-name="Cropped Knit Top"
+                data-price="79"
+                data-category="Women">
+                <div class="product-image">
+                    <img src="knit.png" alt="Cropped Knit Top">
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Women</p>
+                    <h3 class="product-name">Cropped Knit Top</h3>
+                    <p class="product-price">$79</p>
+                    <button class="quick-view-btn" type="button" data-view-product>View Product</button>
+                </div>
+            </article>
+            <article class="product-card"
+                data-name="Straight Leg Jeans"
+                data-price="95"
+                data-category="Women">
+                <div class="product-image">
+                    <img src="G.png" alt="Straight Leg Jeans">
+                </div>
+                <div class="product-info">
+                    <p class="product-category">Women</p>
+                    <h3 class="product-name">Straight Leg Jeans</h3>
+                    <p class="product-price">$95</p>
+                    <button class="quick-view-btn" type="button" data-view-product>View Product</button>
+                </div>
+            </article>
+            <article class="product-card"
+                data-name="Oversized Blazer"
+                data-price="110"
+                data-category="Women">
+                <div class="product-image">
+                    <img src="ov.png" alt="Oversized Blazer">
+                </div>
+                <div class="product-info">
+                     <p class="product-category">Women</p>
+                    <h3 class="product-name">Oversized Blazer</h3>
+                    <p class="product-price">$110</p>
+                    <button class="quick-view-btn" type="button" data-view-product>View Product</button>
+                </div>
+            </article>
+             <article class="product-card"
+                data-name="Everyday Tote Bag"
+                data-price="120"
+                data-category="Women">
+                <div class="product-image">
+                    <img src="bag.png" alt="Everyday Tote Bag">
+                </div>
+                <div class="product-info">
+                     <p class="product-category">Women</p>
+                    <h3 class="product-name">Everyday Tote Bag </h3>
+                    <p class="product-price">$120</p>
+                    <button class="quick-view-btn" type="button" data-view-product>View Product</button>
+                </div>
+            </article>
+        </div>
+     </section>
+
+     <section id="newsletter" class="newsletter">
+    <div class="newsletter-content">
+        <p class="section-label">Stay Connected</p>
+        <h2>Stay in the loop</h2>
+        <p>Get updates on new collections and exclusive offers.</p>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+     </section>
+    <footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-column footer-brand">
+            <h3>NOVAE</h3>
+            <p>Contemporary fashion for modern everyday living.</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Shop</h3>
+            <ul>
+                <li><a href="#shop" data-filter="Women">Women</a></li>
+                <li><a href="#shop" data-filter="Men">Men</a></li>
+                <li><a href="#new-arrivals">New Arrivals</a></li>
+                <li><a href="#sale">Sale</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Customer Care</h3>
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#shipping">Shipping & Returns</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 NOVAE. All rights reserved.</p>
+    </div>
+
+</footer>
+
+<!-- QUICK VIEW MODAL -->
+<div class="quick-view-overlay">
+    <div class="quick-view-modal">
+        <button class="quick-view-close" type="button" aria-label="Close quick view">×</button>
+        <div class="quick-view-image">
+            <img src="" alt="">
+        </div>
+        <div class="quick-view-info">
+            <p class="product-category"></p>
+            <h3 class="qv-name"></h3>
+            <p class="qv-price"></p>
+            <div class="product-actions">
+                <button class="wishlist-btn" type="button" aria-label="Add to wishlist">♡</button>
+                <button class="add-to-cart" type="button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<button class="back-to-top" type="button" aria-label="Back to top">
+    ↑
+</button>
+    
+</body>
+</html>
